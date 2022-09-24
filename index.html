@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                  id="searchBtn"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="overview">
+            <div class="row">
+              <div class="col-6">
+                <h1 id="city"></h1>
+                <ul>
+                  <li>
+                    <span id="description"></span> at <span id="date"></span>
+                  </li>
+                  <li>
+                    Highet Today: <span id="highest"></span>
+                    <span class="units">°C</span>
+                  </li>
+                  <li>
+                    Lowest Today: <span id="lowest"></span>
+                    <span class="units">°C</span>
+                  </li>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span> m/h</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <div class="clearfix weather-temperature">
+                  <img src="" alt="Clear" id="icon" class="float-left" />
+                  <div class="float-left">
+                    <span id="temperature"></span
+                    ><span class="units">
+                      <a href="#" id="celsius-link" class="active">°C</a> |
+                      <a href="#" id="fahrenheit-link">°F</a></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
+          <footer>
+            This project was coded by Lan as a practice project for
+            <a
+              href="https://www.shecodes.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Shecodes</a
+            >
+            and is
+            <a
+              href="https://github.com/b02107006/First-weather-app.git"
+              target="_blank"
+              rel="noopener noreferrer"
+              >open-sourced on GitHub</a
+            >
+            and
+            <a
+              href="https://lustrous-genie-2cabef.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >hosted on Netlify</a
+            >
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
