@@ -99,7 +99,7 @@ li:first-letter {
 
 .weather-temperature {
   display: block;
-  padding: calc(10%);
+  padding: calc(10%) calc(10%) calc(2%) calc(10%);
   color: rgb(33, 33, 33);
   margin-left: 5px;
   font-weight: 400;
@@ -136,6 +136,39 @@ li:first-letter {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+#suntime {
+  display: block;
+  padding: calc(0%) calc(0%) calc(0%) calc(5%);
+}
+
+.weather-forecast {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  border-bottom: 1px solid #faedcd;
+  padding-bottom: 40px;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #9a8c98;
+}
+
+.weather-forecast-temperature-min {
+  margin-left: 10px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffb5a7;
+  font-weight: bold;
 }
 
 footer {

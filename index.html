@@ -11,7 +11,12 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
+    <script
+      src="https://kit.fontawesome.com/e39dce2021.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -70,6 +75,28 @@
                       <a href="#" id="fahrenheit-link">°F</a></span
                     >
                   </div>
+                </div>
+                <div id="suntime">
+                  <ul class="sun">
+                    <li>
+                      <p>
+                        <i
+                          class="fa-regular fa-sun"
+                          alt="sunrise"
+                          id="sunriseImg"
+                          class="float-left"
+                        ></i
+                        >Sunrise: <span id="sunriseTime">7</span> |
+                        <i
+                          class="fa-regular fa-moon"
+                          alt="sunset"
+                          id="sunsetImg"
+                          class="float-left"
+                        ></i>
+                        Sunset: <span id="sunsetTime">7</span>
+                      </p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
